@@ -2,12 +2,12 @@ const header = document.querySelector(".site-header");
 const revealElements = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", () => {
-  if (header) {
-    if (window.scrollY > 20) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
+  if (!header) return;
+
+  if (window.scrollY > 20) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
   }
 });
 
@@ -43,10 +43,13 @@ let currentIndex = 0;
 const images = Array.from(lightboxTriggers);
 
 function openLightbox(index) {
-  if (!lightbox || !images.length) return;
+  if (!lightbox || !lightboxImage || !lightboxCaption || !images.length) return;
+
   currentIndex = index;
   const image = images[currentIndex];
   const img = image.querySelector("img");
+
+  if (!img) return;
 
   lightboxImage.src = img.src;
   lightboxImage.alt = img.alt;
@@ -57,23 +60,28 @@ function openLightbox(index) {
 
 function closeLightbox() {
   if (!lightbox) return;
+
   lightbox.classList.remove("open");
   document.body.style.overflow = "";
 }
 
 function showNext() {
+  if (!images.length) return;
   currentIndex = (currentIndex + 1) % images.length;
   openLightbox(currentIndex);
 }
 
 function showPrev() {
+  if (!images.length) return;
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   openLightbox(currentIndex);
 }
 
-images.forEach((item, index) => {
-  item.addEventListener("click", () => openLightbox(index));
-});
+if (images.length) {
+  images.forEach((item, index) => {
+    item.addEventListener("click", () => openLightbox(index));
+  });
+}
 
 if (lightboxClose) {
   lightboxClose.addEventListener("click", closeLightbox);
