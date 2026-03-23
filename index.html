@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Static Emotion Photo | Anna Bulek</title>
+  <meta name="description" content="Static Emotion Photo - naturalna fotografia pełna emocji, wspomnień i subtelnych kadrów.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav-wrapper">
-      <a href="#home" class="brand">
+      <a href="index.html" class="brand">
         <img src="images/Owl_logo.png" alt="Static Emotion Photo logo" class="brand-logo">
         <div class="brand-text">
           <span class="brand-name">Static Emotion Photo</span>
@@ -20,19 +21,17 @@
 
       <nav class="site-nav">
         <ul>
-          <li><a href="#home">Start</a></li>
-          <li><a href="#about">O mnie</a></li>
-          <li><a href="#services">Oferta</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="index.html" class="active-link">Start</a></li>
+          <li><a href="about.html">O mnie</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-
-    <section class="hero reveal" id="home">
+    <section class="hero reveal">
       <div class="container hero-grid">
         <div class="hero-content">
           <p class="eyebrow">Fotografia pełna emocji i subtelnych wspomnień</p>
@@ -43,8 +42,8 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="#portfolio" class="btn btn-primary">Zobacz portfolio</a>
-            <a href="#contact" class="btn btn-outline">Umów sesję</a>
+            <a href="gallery.html" class="btn btn-primary">Zobacz galerię</a>
+            <a href="contact.html" class="btn btn-outline">Umów sesję</a>
           </div>
         </div>
 
@@ -54,33 +53,44 @@
       </div>
     </section>
 
-    <section class="about section reveal" id="about">
-      <div class="container two-col">
-        <div class="section-image-card">
-          <img src="images/sesja_rodzinna_4.jpg" alt="Anna Bulek fotograf" class="about-image">
+    <section class="section reveal">
+      <div class="container preview-grid">
+        <div class="preview-text">
+          <p class="section-tag">Wybrane kadry</p>
+          <h2>Delikatne sesje z klimatem</h2>
+          <p>
+            Fotografuję emocje, bliskość i autentyczne momenty. Tworzę naturalne sesje,
+            w których najważniejsze są uczucia, światło i piękno chwili.
+          </p>
+          <div class="hero-buttons">
+            <a href="gallery.html" class="btn btn-primary">Pełna galeria</a>
+            <a href="about.html" class="btn btn-outline">Poznaj mnie</a>
+          </div>
         </div>
 
-        <div class="section-content">
-          <p class="section-tag">O mnie</p>
-          <h2>Cześć, mam na imię Anna</h2>
-          <p>
-            Fotografia to dla mnie coś więcej niż zdjęcia — to emocje, światło,
-            detale i wspomnienia zamknięte w jednym kadrze.
-          </p>
-          <p>
-            Tworzę naturalne i subtelne sesje, w których najważniejsza jest autentyczność,
-            atmosfera i piękno chwili.
-          </p>
+        <div class="preview-gallery">
+          <div class="preview-card">
+            <img src="images/sesja_noworodka_5.jpg" alt="Sesja noworodkowa">
+          </div>
+          <div class="preview-card">
+            <img src="images/sesja_kobieca_14.jpg" alt="Sesja kobieca">
+          </div>
+          <div class="preview-card">
+            <img src="images/sesja_dziecieca_15.jpg" alt="Sesja dziecięca">
+          </div>
+          <div class="preview-card">
+            <img src="images/sesja_slubna_3.jpg" alt="Sesja ślubna">
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="services section reveal" id="services">
+    <section class="services section reveal">
       <div class="container">
         <div class="section-heading">
           <p class="section-tag">Oferta</p>
           <h2>Rodzaje sesji</h2>
-          <p>Każda sesja jest tworzona z dbałością o klimat, emocje i estetykę.</p>
+          <p>Każda sesja powstaje z dbałością o emocje, estetykę i atmosferę.</p>
         </div>
 
         <div class="cards-grid">
@@ -106,69 +116,17 @@
         </div>
       </div>
     </section>
-
-    <section class="portfolio section reveal" id="portfolio">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-tag">Portfolio</p>
-          <h2>Wybrane kadry</h2>
-          <p>Tu możesz pokazać najpiękniejsze zdjęcia swojej siostry.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="images/sesja_noworodka_5.jpg" alt="Zdjęcie portfolio 1">
-          </div>
-          <div class="gallery-item">
-            <img src="images/sesja_kobieca_14.jpg" alt="Zdjęcie portfolio 2">
-          </div>
-          <div class="gallery-item">
-            <img src="images/sesja_dziecieca_15.jpg" alt="Zdjęcie portfolio 3">
-          </div>
-          <div class="gallery-item">
-            <img src="images/sesja_komunia_1.jpg" alt="Zdjęcie portfolio 4">
-          </div>
-          <div class="gallery-item">
-            <img src="images/sesja_slubna_3.jpg" alt="Zdjęcie portfolio 5">
-          </div>
-          <div class="gallery-item">
-            <img src="images/sesja_rodzinna_13.jpg" alt="Zdjęcie portfolio 6">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section reveal" id="contact">
-      <div class="container contact-box">
-        <div class="contact-text">
-          <p class="section-tag">Kontakt</p>
-          <h2>Skontaktuj się ze mną</h2>
-          <p>
-            Jeśli chcesz umówić sesję lub zapytać o szczegóły oferty,
-            napisz lub zadzwoń.
-          </p>
-
-          <div class="contact-details">
-            <p><strong>Telefon:</strong> 501 677 441</p>
-            <p><strong>Email:</strong> kontakt@staticemotionphoto.pl</p>
-            <p><strong>Lokalizacja:</strong> Polska</p>
-          </div>
-        </div>
-
-        <form class="contact-form">
-          <input type="text" placeholder="Imię i nazwisko">
-          <input type="email" placeholder="Adres e-mail">
-          <textarea placeholder="Napisz wiadomość"></textarea>
-          <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
-        </form>
-      </div>
-    </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="container footer-wrapper">
       <p>© 2026 Static Emotion Photo | Anna Bulek</p>
+
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+
       <p class="footer-credit">
         Website created by Barbara Jaskiewicz - Web Design & Freelancer Social Media
       </p>
