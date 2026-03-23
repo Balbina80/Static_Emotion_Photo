@@ -165,17 +165,17 @@ button {
 
 .hero h1,
 .page-hero h1 {
-  font-size: clamp(2.2rem, 4.2vw, 3.9rem);
+  font-size: clamp(1.9rem, 3.2vw, 2.8rem);
   line-height: 1.06;
   letter-spacing: -0.035em;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .section-heading h2,
 .section-content h2,
 .contact-text h2,
 .preview-text h2 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
   line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: 0.9rem;
@@ -188,9 +188,9 @@ button {
 
 .hero-lead,
 .page-lead {
-  font-size: 1.08rem;
+  font-size: 1rem;
   color: var(--muted);
-  max-width: 58ch;
+  max-width: 54ch;
   margin-bottom: 1.8rem;
 }
 
@@ -214,9 +214,9 @@ button {
 
 .hero-image {
   width: 100%;
-  height: 460px;
+  height: 420px;
   object-fit: cover;
-  object-position: center 32%;
+  object-position: center 24%;
   border-radius: 20px;
 }
 
