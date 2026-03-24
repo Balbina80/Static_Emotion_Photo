@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | Static Emotion Photo</title>
   <meta name="description" content="Full gallery of Static Emotion Photo.">
+  <meta name="keywords" content="photographer Jaworzno, family photography Jaworzno, newborn session Jaworzno, children's photography Jaworzno, women's photo session Jaworzno">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,9 +43,9 @@
     <section class="page-hero reveal">
       <div class="container page-card">
         <p class="page-tag">Gallery</p>
-        <h1>Selected Moments</h1>
+        <h1>Stories captured in frames</h1>
         <p class="page-lead">
-          Click on a photo to view it in full size and browse through the collection.
+          Choose a category and explore photographs full of emotion, natural beauty and timeless memories.
         </p>
       </div>
     </section>
@@ -53,40 +54,74 @@
       <h2 class="visually-hidden">Photo Gallery</h2>
 
       <div class="container">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="newborn">Newborn</button>
+          <button class="filter-btn" data-filter="women">Women</button>
+          <button class="filter-btn" data-filter="children">Children</button>
+          <button class="filter-btn" data-filter="family">Family</button>
+          <button class="filter-btn" data-filter="wedding">Wedding</button>
+          <button class="filter-btn" data-filter="communion">Communion</button>
+        </div>
+
         <div class="gallery-grid">
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="newborn">
             <img src="images/sesja_noworodka_5.jpg" alt="Newborn session">
+            <div class="gallery-overlay"><span>Newborn Session</span></div>
           </div>
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="women">
             <img src="images/sesja_kobieca_14.jpg" alt="Women's session">
+            <div class="gallery-overlay"><span>Women's Session</span></div>
           </div>
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="children">
             <img src="images/sesja_dziecieca_15.jpg" alt="Children's session">
+            <div class="gallery-overlay"><span>Children's Session</span></div>
           </div>
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="communion">
             <img src="images/sesja_komunia_1.jpg" alt="Communion session">
+            <div class="gallery-overlay"><span>Communion Session</span></div>
           </div>
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="wedding">
             <img src="images/sesja_slubna_3.jpg" alt="Wedding session">
+            <div class="gallery-overlay"><span>Wedding Session</span></div>
           </div>
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="family">
             <img src="images/sesja_rodzinna_13.jpg" alt="Family session">
+            <div class="gallery-overlay"><span>Family Session</span></div>
           </div>
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="children">
             <img src="images/sesja_dziecieca_4.jpg" alt="Child portrait">
+            <div class="gallery-overlay"><span>Child Portrait</span></div>
           </div>
 
-          <div class="gallery-item lightbox-trigger">
+          <div class="gallery-item lightbox-trigger" data-category="family">
             <img src="images/sesja_rodzinna_4.jpg" alt="Family studio portrait">
+            <div class="gallery-overlay"><span>Family Portrait</span></div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-cta section reveal">
+      <div class="container">
+        <div class="cta-box">
+          <p class="section-tag">Book a session</p>
+          <h2>Preserve your most beautiful moments in photographs</h2>
+          <p>
+            If you dream of a natural, emotion-filled photo session, get in touch and tell me about your idea.
+          </p>
+          <div class="hero-buttons">
+            <a href="contact-en.html" class="btn btn-primary">Get in touch</a>
+            <a href="about-en.html" class="btn btn-outline">Meet me</a>
+          </div>
         </div>
       </div>
     </section>
