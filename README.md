@@ -6,7 +6,7 @@
 
 ## 🌐 Live Website
 
-👉 https://staticemotion.pl *(coming soon)*
+👉 https://staticemotion.pl 
 
 ---
 
