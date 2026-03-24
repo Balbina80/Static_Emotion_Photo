@@ -6,20 +6,20 @@
 
 ## 🌐 Live Website
 
-👉 https://staticemotion.pl 
+👉 https://staticemotion.pl
 
 ---
 
 ## 🎯 Project Overview
 
-This project was created for a professional photographer to present her work in a clean, modern and emotionally engaging way.
+This project was designed and developed for a professional photographer to present her work in a clean, modern and emotionally engaging way.
 
-The focus was on:
+The main focus was on:
 
 * strong visual storytelling
 * soft, feminine design
 * premium user experience
-* responsive layout
+* fully responsive layout
 
 ---
 
@@ -27,10 +27,11 @@ The focus was on:
 
 ✔ Fully responsive design (mobile, tablet, desktop)
 ✔ Magazine-style photo gallery
-✔ Smooth hover effects and animations
-✔ Elegant UI with soft color palette
+✔ Smooth hover effects and subtle animations
+✔ Elegant UI with a soft, pastel colour palette
 ✔ Sticky navigation with branding
-✔ Contact section with form layout
+✔ Contact section with structured form layout
+✔ 🌍 Multilingual support (PL / EN)
 
 ---
 
@@ -43,8 +44,9 @@ The design is inspired by:
 * emotional photography presentation
 
 The layout ensures that:
-👉 photos are the main focus
-👉 interface does not distract from content
+
+👉 photography remains the main focus
+👉 the interface enhances, not distracts from the content
 
 ---
 
@@ -61,7 +63,8 @@ The layout ensures that:
 * Full website design (UI/UX)
 * Front-end development
 * Branding integration (logo, typography, layout)
-* Performance and responsiveness optimisation
+* Responsive design implementation
+* Performance and visual optimisation
 
 ---
 
@@ -74,16 +77,16 @@ The layout ensures that:
 ## 🚀 Future Improvements
 
 * Booking system integration
-* CMS (WordPress / headless CMS)
+* CMS integration (WordPress / headless CMS)
 * SEO optimisation
-* Image lazy loading & performance upgrades
+* Image lazy loading & performance enhancements
 
 ---
 
 ## 💼 Portfolio
 
 Check my other projects:
-👉 (https://ajfitness.uk/)
+👉 https://ajfitness.uk/
 
 ---
 
@@ -95,3 +98,4 @@ Web Design & Freelancer Social Media
 ---
 
 ✨ *Designed with attention to detail, emotion and user experience.*
+
