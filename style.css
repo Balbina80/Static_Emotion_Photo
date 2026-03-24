@@ -836,31 +836,19 @@ button {
   }
 }
 
+/* FIX: reveal na mobile */
+
 @media (max-width: 768px) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
   .nav-wrapper {
     flex-direction: column;
     justify-content: center;
     padding: 0.8rem 0;
     gap: 1rem;
-  }
-
-  .gallery-filters {
-    gap: 0.6rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .filter-btn {
-    font-size: 0.85rem;
-    padding: 0.55rem 0.85rem;
-  }
-
-  .gallery-overlay {
-    opacity: 1;
-    padding: 1rem 0.9rem 0.8rem;
-  }
-
-  .cta-box {
-    padding: 2rem 1.1rem;
   }
 
   .brand {
@@ -872,7 +860,7 @@ button {
   }
 
   .brand-text {
-    text-align: left;
+    text-align: center;
   }
 
   .nav-right {
@@ -891,6 +879,30 @@ button {
 
   .language-switch {
     justify-content: center;
+  }
+
+  /* FILTERS */
+  .gallery-filters {
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    font-size: 0.85rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  /* OVERLAY ALWAYS VISIBLE ON MOBILE */
+  .gallery-overlay {
+    opacity: 1;
+    padding: 1rem 0.9rem 0.8rem;
+  }
+
+  /* CTA */
+  .cta-box {
+    padding: 2rem 1.1rem;
   }
 
   .hero {
