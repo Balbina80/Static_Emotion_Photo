@@ -168,3 +168,54 @@ if (filterButtons.length && galleryItems.length) {
     });
   });
 }
+
+/* PREMIUM MOBILE MENU */
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector(".site-nav");
+const menuOverlay = document.querySelector(".menu-overlay");
+const navLinks = document.querySelectorAll(".site-nav a");
+
+if (menuToggle && siteNav && menuOverlay) {
+  const openMenu = () => {
+    menuToggle.classList.add("active");
+    siteNav.classList.add("active");
+    menuOverlay.classList.add("active");
+    document.body.classList.add("menu-open");
+    menuToggle.setAttribute("aria-expanded", "true");
+  };
+
+  const closeMenu = () => {
+    menuToggle.classList.remove("active");
+    siteNav.classList.remove("active");
+    menuOverlay.classList.remove("active");
+    document.body.classList.remove("menu-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  };
+
+  const toggleMenu = () => {
+    if (siteNav.classList.contains("active")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  };
+
+  menuToggle.addEventListener("click", toggleMenu);
+  menuOverlay.addEventListener("click", closeMenu);
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("active")) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      closeMenu();
+    }
+  });
+}

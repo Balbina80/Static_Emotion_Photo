@@ -20,33 +20,41 @@
 <body>
 
   <header class="site-header">
-    <div class="container nav-wrapper">
-      <a href="index-en.html" class="brand">
-        <img src="images/Owl_logo.png" alt="Static Emotion Photo logo" class="brand-logo">
-        <div class="brand-text">
-          <span class="brand-name">Static Emotion Photo</span>
-          <span class="brand-sub">Anna Bulek</span>
-        </div>
-      </a>
+  <div class="container nav-wrapper">
+    <a href="index-en.html" class="brand">
+      <img src="images/Owl_logo.png" alt="Static Emotion Photo logo" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-name">Static Emotion Photo</span>
+        <span class="brand-sub">Anna Bulek</span>
+      </div>
+    </a>
 
-      <div class="nav-right">
-        <nav class="site-nav">
-          <ul>
-            <li><a href="index-en.html">Home</a></li>
-            <li><a href="about-en.html">About</a></li>
-            <li><a href="gallery-en.html" class="active-link">Gallery</a></li>
-            <li><a href="contact-en.html">Contact</a></li>
-          </ul>
-        </nav>
+    <div class="nav-right">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        <div class="language-switch">
-          <a href="gallery.html" class="lang-link">PL</a>
-          <span>/</span>
-          <a href="gallery-en.html" class="lang-link active">EN</a>
-        </div>
+      <nav class="site-nav" id="mobile-menu">
+        <ul>
+          <li><a href="index-en.html">Home</a></li>
+          <li><a href="about-en.html">About</a></li>
+          <li><a href="gallery-en.html" class="active-link">Gallery</a></li>
+          <li><a href="contact-en.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="language-switch">
+        <a href="gallery.html" class="lang-link">PL</a>
+        <span>/</span>
+        <a href="gallery-en.html" class="lang-link active">EN</a>
       </div>
     </div>
-  </header>
+  </div>
+
+  <div class="menu-overlay"></div>
+</header>
 
   <main>
     <section class="page-hero">
