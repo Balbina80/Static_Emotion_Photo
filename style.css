@@ -544,6 +544,7 @@ body.menu-open .language-switch {
 .preview-card {
   position: relative;
   overflow: hidden;
+  border-radius: 22px;
 }
 
 .preview-card img {
@@ -562,28 +563,18 @@ body.menu-open .language-switch {
 
 .preview-image {
   width: 100%;
+  height: 100%;
   aspect-ratio: 4 / 5;
-  height: auto;
+
   object-fit: cover;
-  display: block;
-  border-radius: 20px;
+  object-position: center;
+
+  transform: scale(1.02);
   transition: transform 0.4s ease;
 }
 
 .preview-card:hover .preview-image {
-  transform: scale(1.03);
-}
-
-.preview-crop-baby {
-  object-position: center 42%;
-}
-
-.preview-crop-woman {
-  object-position: center 18%;
-}
-
-.preview-crop-sign {
-  object-position: center 35%;
+  transform: scale(1.04);
 }
 
 .preview-overlay {
@@ -597,6 +588,10 @@ body.menu-open .language-switch {
 .preview-overlay span {
   font-size: 0.92rem;
   font-weight: 600;
+}
+
+.preview-overlay {
+  backdrop-filter: blur(2px);
 }
 
 /* GALLERY */
