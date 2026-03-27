@@ -1058,5 +1058,67 @@ button {
   .map-box iframe {
     height: 240px;
   }
+.gallery-item img {
+  aspect-ratio: 4 / 5;
+  height: auto;
+}
 
+}
+
+.preview-grid-three {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  align-items: stretch;
+}
+
+.preview-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.preview-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+.preview-crop-baby {
+  object-position: center 42%;
+}
+
+.preview-crop-woman {
+  object-position: center 18%;
+}
+
+.preview-crop-sign {
+  object-position: center 35%;
+}
+
+.preview-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1rem 0.9rem 0.85rem;
+  background: linear-gradient(to top, rgba(20, 20, 24, 0.55), rgba(20, 20, 24, 0.02));
+  color: #fff;
+}
+
+.preview-overlay span {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .preview-grid-three {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-grid-three {
+    grid-template-columns: 1fr;
+  }
 }
