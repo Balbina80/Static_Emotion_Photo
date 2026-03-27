@@ -219,3 +219,24 @@ if (menuToggle && siteNav && menuOverlay) {
     }
   });
 }
+
+/* PREVIEW STAGGER ANIMATION */
+const previewCards = document.querySelectorAll(".preview-card");
+
+if (previewCards.length) {
+  const previewObserver = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    }
+  );
+
+  previewCards.forEach((card) => previewObserver.observe(card));
+}
