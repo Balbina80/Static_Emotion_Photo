@@ -240,3 +240,35 @@ if (previewCards.length) {
 
   previewCards.forEach((card) => previewObserver.observe(card));
 }
+
+/* CONTACT FORM - FORMSPREE */
+const contactForm = document.querySelector(".contact-form");
+const formSuccess = document.querySelector(".form-success");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+
+        if (formSuccess) {
+          formSuccess.style.display = "block";
+        }
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  });
+}
